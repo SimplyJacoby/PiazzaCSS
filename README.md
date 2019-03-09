@@ -1,2 +1,2 @@
 # PiazzaCSS
-dark theme for piazza
+Dark theme for NCSU CSC-116 Piazza site
