@@ -9,20 +9,133 @@
 @updateURL      https://raw.githubusercontent.com/SimplyJacoby/PiazzaCSS/master/piazza.user.css
 @license        CC-BY-SA-4.0
 @preprocessor   default
+@var select bg-color "Main Background Color" {
+    "Arc Dark": "#383c4a",
+    "Atom One Dark (Default)*": "#21252b",
+    "Deep Dark": "#1A1A1A",
+    "Discord Dark": "#23272A",
+    "Dracula":"#282a36",
+    "Light": "#F3F3F4",
+    "Microsoft Dark": "#171717",
+    "Custom": "var(--custom-bg-color)"
+}
+@var color custom-bg-color "Custom Main Background Color" #21252b
+
+@var select bg-2-color "Secondary Background Color" {
+    "Arc Dark": "#404552",
+    "Atom One Dark (Default)*": "#282C34",
+    "Deep Dark": "#222222",
+    "Discord Dark": "#36393F",
+    "Dracula":"#44475a",
+    "Light": "#ffffff",
+    "Microsoft Dark": "#1F1F1F",
+    "Custom": "var(--custom-bg-2-color)"
+}
+@var color custom-bg-2-color "Custom Secondary Background Color" #282C34
+
+@var select bg-3-color "Tertiary Background Color" {
+    "Arc Dark": "#4b5162",
+    "Atom One Dark (Default)*": "#333842",
+    "Deep Dark": "#232938",
+    "Discord Dark": "#42464D",
+    "Dracula":"#686C8A",
+    "Light": "#FAFAFA",
+    "Microsoft Dark": "#272727",
+    "Custom": "var(--custom-bg-3-color)"
+}
+@var color custom-bg-3-color "Custom Tertiary Background Color" #333842
+
+@var select button-color "Button Color"{
+    "Arc Dark": "#5294e2",
+    "Atom One Dark (Default)*": "#303344",
+    "Deep Dark": "#006C69",
+    "Discord Dark": "#7289DA",
+    "Dracula":"#6272a4",
+    "Light": "#A8FFEE",
+    "Microsoft Dark": "#1073D6",
+    "Custom": "var(--custom-button-color)"
+}
+@var color custom-button-color "Custom Button Color" #303344
+
+@var select textarea-color "Text Input Background Color" {
+    "Arc Dark": "#7c818c",
+    "Atom One Dark (Default)*": "#303344",
+    "Deep Dark": "#006C69",
+    "Discord Dark": "#4A4D53",
+    "Dracula":"#81859E",
+    "Light": "#F2F2F2",
+    "Microsoft Dark": "#363636",
+    "Custom": "var(--custom-textarea-color)"
+}
+@var color custom-textarea-color "Custom Text Input Background Color" #303344
+
+@var select border-color "Border Color" {
+    "Arc Dark": "#4D596C",
+    "Atom One Dark (Default)*": "#47474b",
+    "Deep Dark": "#454545",
+    "Discord Dark": "#3E4145",
+    "Dracula":"#1C1D24",
+    "Light": "#C9C9C9",
+    "Microsoft Dark": "#333333",
+    "Custom": "var(--custom-border-color)"
+}
+@var color custom-border-color "Custom Border Color" #47474b
+
+@var select hover-color "Mouse Hover Color" {
+    "Arc Dark": "#2B7ADB",
+    "Atom One Dark (Default)*": "#434462",
+    "Deep Dark": "#016964",
+    "Discord Dark": "#6680D7",
+    "Dracula":"#596A9B",
+    "Light": "#79FFE4",
+    "Microsoft Dark": "#1A4B7D",
+    "Custom": "var(--custom-hover-color)"
+}
+@var color custom-hover-color "Custom Mouse Hover Color" #434462
+
+@var select font-family "Font Family" {"Arial":"Arial", "Arial Black":"Arial Black","Arial Narrow":"Arial Narrow", "Comic Sans":"Comic Sans MS", "Courier New":"Courier New","Fira Code":"Fira Code", "Georgia":"Georgia", "Helvetica*":"Helvetica", "Impact":"Impact", "Lucida Console":"Lucida Console", "Times New Roman":"Times New Roman", "Trebuchet MS":"Trebuchet MS", "Verdana":"Verdana"}
+
+@var select text-color "Text Color" {
+    "Arc Dark": "#ffffff",
+    "Atom One Dark (Default)*": "#D7E2EF",
+    "Deep Dark": "#D7E2EF",
+    "Discord Dark": "#ffffff",
+    "Dracula":"#f8f8f2",
+    "Light": "#2D2D2D",
+    "Microsoft Dark": "#ffffff",
+    "Custom": "var(--custom-text-color)"
+}
+@var color custom-text-color "Custom Text Color" #D7E2EF
+
+@var select link-color "Link Text Color" {
+    "Arc Dark": "#DCD1FA",
+    "Atom One Dark (Default)*": "#488bdd",
+    "Deep Dark": "#4AC0FF",
+    "Discord Dark": "#2C6AA3",
+    "Dracula":"#8BE9FD",
+    "Light": "#488bdd",
+    "Microsoft Dark": "#97C0FF",
+    "Custom": "var(--custom-link-color)"
+}
+@var color custom-link-color "Link Text Color" #488bdd
+
+@var select link-hover-color "Link Text Hover Color" {
+    "Arc Dark": "#B79EF5",
+    "Atom One Dark (Default)*": "#3686CD",
+    "Deep Dark": "#1AAEFF",
+    "Discord Dark": "#265C8F",
+    "Dracula":"#5FE0FC",
+    "Light": "#3686CD",
+    "Microsoft Dark": "#77ADFF",
+    "Custom": "var(--custom-link-hover-color)"
+}
+@var color custom-link-hover-color "Link Text Hover Color" #386ed0
 ==/UserStyle== */
 
 @-moz-document domain("piazza.com") {
     :root {
-        --bg-color: #21252b;
-        --bg-2-color: #282C34;
-        --bg-3-color: #333842;
-        --button-color: #303344;
-        --textarea-color: #303344;
-        --border-color: #47474b;
-        --hover-color: #434462;
         --red-color: #8c4a4a;
         --dark-red-color: #643939;
-        --bright-red-color: #f44141;
         --green-color: #478a4f;
         --yellow-color: #a3a65d;
         --dark-yellow-color: #898d46;
@@ -30,9 +143,6 @@
         --alt-purple-color: #ff8fdb;
         --gray-color: #798497;
         --dark-gray-color: #4a5775;
-        --text-color: #D7E2EF;
-        --link-color: #488bdd;
-        --link-hover-color: #386ed0;
     }
     
     
@@ -43,6 +153,7 @@
         transition: background .15s ease-in-out, color 0s !important;
         text-decoration: none !important;
         text-shadow: none !important;
+        font-family: var(--font-family) !important;
 /*         background-color: #0000 !important; */
     }
     
