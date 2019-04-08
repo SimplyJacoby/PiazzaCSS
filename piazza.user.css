@@ -144,6 +144,7 @@
         --purple-color: #c068f3;
         --alt-purple-color: #ff8fdb;
         --gray-color: #798497;
+        --code-block-bg: #b6b7be;
         --dark-gray-color: #4a5775;
     }
     
@@ -156,8 +157,74 @@
         text-decoration: none !important;
         text-shadow: none !important;
         font-family: var(--font-family) !important;
-/*         background-color: #0000 !important; */
     }
+    
+    /* Google Prettify Styles: */
+    .pln {
+        color: #000 !important;
+    }
+    @media screen {
+        .str {
+            color: #080 !important;
+        }
+        .kwd {
+            color: #008 !important;
+        }
+        .com {
+            color: #800 !important;
+        }
+        .typ {
+            color: #606 !important;
+        }
+        .lit {
+            color: #066 !important;
+        }
+        .pun, .opn, .clo {
+            color: #660 !important;
+        }
+        .atn {
+            color: #606 !important;
+        }
+        .atv {
+            color: #080 !important;
+        }
+        .dec, .var {
+            color: #606 !important;
+        }
+        .fun {
+            color: red !important;
+        }
+    }
+    @media print, projection {
+        .str {
+        color: #060 !important;
+        }
+        .kwd {
+            color: #006 !important;
+            font-weight: bold !important;
+        }
+        .com {
+            color: #600 !important;
+            font-style: italic !important;
+        }
+        .typ {
+            color: #404 !important;
+            font-weight: bold !important;
+        }
+        .lit {
+            color: #044 !important;
+        }
+        .pun, .opn, .clo {
+            color: #440 !important;
+        }
+        .atn {
+            color: #404 !important;
+        }
+        .atv {
+            color: #060 !important;
+        }
+    }
+
     
     /* links */
     a {
@@ -175,13 +242,15 @@
     
     /* code block */
     .prettyprint {
-        background: var(--gray-color) !important;
+        background: var(--code-block-bg) !important;
+        border: 1px solid var(--border-color) !important;
         box-shadow: none !important;
         border-radius: 5px !important;
     }
     
     .prettyprint span {
         font-family: var(--code-block-font-family) !important;
+        
     }
     
     /* textareas */
