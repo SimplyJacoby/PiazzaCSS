@@ -95,6 +95,8 @@
 
 @var select font-family "Font Family" {"Arial":"Arial", "Arial Black":"Arial Black","Arial Narrow":"Arial Narrow", "Comic Sans":"Comic Sans MS", "Courier New":"Courier New","Fira Code":"Fira Code", "Georgia":"Georgia", "Helvetica*":"Helvetica", "Impact":"Impact", "Lucida Console":"Lucida Console", "Times New Roman":"Times New Roman", "Trebuchet MS":"Trebuchet MS", "Verdana":"Verdana"}
 
+@var select code-block-font-family "Code Block Font Family" {"Arial":"Arial", "Arial Black":"Arial Black","Arial Narrow":"Arial Narrow", "Comic Sans":"Comic Sans MS", "Courier New*":"Courier New","Fira Code":"Fira Code", "Georgia":"Georgia", "Helvetica":"Helvetica", "Impact":"Impact", "Lucida Console":"Lucida Console", "Times New Roman":"Times New Roman", "Trebuchet MS":"Trebuchet MS", "Verdana":"Verdana"}
+
 @var select text-color "Text Color" {
     "Arc Dark": "#ffffff",
     "Atom One Dark (Default)*": "#D7E2EF",
@@ -173,9 +175,13 @@
     
     /* code block */
     .prettyprint {
-        background: var(--dark-gray-color) !important;
+        background: var(--gray-color) !important;
         box-shadow: none !important;
         border-radius: 5px !important;
+    }
+    
+    .prettyprint span {
+        font-family: var(--code-block-font-family) !important;
     }
     
     /* textareas */
