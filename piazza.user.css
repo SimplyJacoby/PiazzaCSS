@@ -136,6 +136,7 @@
 
 @-moz-document domain("piazza.com") {
     :root {
+        --bright-red-color: #d94f4f;
         --red-color: #8c4a4a;
         --dark-red-color: #643939;
         --green-color: #478a4f;
@@ -756,5 +757,10 @@
     
     #stud_participation tbody tr, #stud_participation tbody tr td {
         background: none !important;
+    }
+    
+    /* user editing post message */
+    .editing_message {
+        color: var(--bright-red-color) !important;
     }
 }
