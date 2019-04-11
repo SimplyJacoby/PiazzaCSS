@@ -357,7 +357,7 @@
     
     /* buttons */
     .post_region_box .edit {
-        background-color: var(--yellow-color) !important;
+        background: var(--yellow-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
         color: var(--text-color) !important;
@@ -365,30 +365,30 @@
     }
     
     .post_region_box .edit:hover {
-        background-color: var(--dark-yellow-color) !important;
+        background: var(--dark-yellow-color) !important;
         color: var(--text-color) !important;
     }
     
     #post_button {
-        background-color: var(--red-color) !important;
+        background: var(--red-color) !important;
         border: 1px solid var(--border-color) !important;
         box-shadow: none !important;
         border-radius: 5px !important;
     }
     
     #post_button:hover {
-        background-color: var(--dark-red-color) !important;
+        background: var(--dark-red-color) !important;
     }
     
     .btn-primary, .loadMoreContent, .btn {
-        background-color: var(--button-color) !important;
+        background: var(--button-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
         box-shadow: none !important;
     }
     
     .btn-primary:hover, .loadMoreContent:hover, .btn:hover {
-        background-color: var(--hover-color) !important;
+        background: var(--hover-color) !important;
     }
     
     /* nav tabs */
