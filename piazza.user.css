@@ -259,7 +259,7 @@
     }
     
     /* textareas */
-    .compose_discussion, .compose_reply, .compose_answer, .search_bar, .new_post_textarea, #input_poll_choice, #input_poll_explanation, .post_region_input {
+    .compose_discussion, .compose_reply, .compose_answer, .search_bar, .new_post_textarea, #input_poll_choice, #input_poll_explanation, .post_region_input, .autocomplete, .show_for_edit, .searchbar_wrapper, .network_search_section_input {
         background: var(--textarea-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
@@ -275,6 +275,21 @@
         background: var(--button-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
+    }
+    
+    /* modals */
+    .modal-content {
+        background-color: var(--bg-3-color) !important;
+    }
+    
+    #badges_modal_save_button {
+        background-color: var(--button-color) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 5px !important;
+    }
+    
+    #badges_modal_save_button:hover {
+        background: var(--hover-color) !important;
     }
     
     /* edit text */
@@ -342,7 +357,7 @@
     
     /* buttons */
     .post_region_box .edit {
-        background: var(--yellow-color) !important;
+        background-color: var(--yellow-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
         color: var(--text-color) !important;
@@ -350,30 +365,43 @@
     }
     
     .post_region_box .edit:hover {
-        background: var(--dark-yellow-color) !important;
+        background-color: var(--dark-yellow-color) !important;
         color: var(--text-color) !important;
     }
     
     #post_button {
-        background: var(--red-color) !important;
+        background-color: var(--red-color) !important;
         border: 1px solid var(--border-color) !important;
         box-shadow: none !important;
         border-radius: 5px !important;
     }
     
     #post_button:hover {
-        background: var(--dark-red-color) !important;
+        background-color: var(--dark-red-color) !important;
     }
     
     .btn-primary, .loadMoreContent, .btn {
-        background: var(--button-color) !important;
+        background-color: var(--button-color) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 5px !important;
         box-shadow: none !important;
     }
     
     .btn-primary:hover, .loadMoreContent:hover, .btn:hover {
-        background: var(--hover-color) !important;
+        background-color: var(--hover-color) !important;
+    }
+    
+    /* nav tabs */
+    .nav-tabs li a {
+        background-color: var(--button-color) !important;
+    }
+    
+    .nav-tabs .active a {
+        background-color: var(--hover-color) !important;
+    }
+    
+    .nav-tabs a:hover {
+        background-color: var(--hover-color) !important;
     }
     
     /* dropdowns */
@@ -762,5 +790,95 @@
     /* user editing post message */
     .editing_message {
         color: var(--bright-red-color) !important;
+    }
+    
+    /* alert */
+    .alert-info {
+        background-color: var(--red-color) !important;
+        border-radius: 5px !important;
+    }
+    
+    /* reseources page header */
+    #header {
+        background-color: var(--bg-2-color) !important;
+    }
+    
+    /* office hours table */
+    .office_hours {
+        background-color: var(--bg-3-color) !important;
+    }
+    
+    /* announcement */
+    .announcement {
+        background-color: var(--bg-3-color) !important;
+    }
+}
+
+@-moz-document url-prefix("https://piazza.com/careers/dashboard") {
+    :root {
+        --bright-red-color: #d94f4f;
+        --red-color: #8c4a4a;
+        --dark-red-color: #643939;
+        --green-color: #478a4f;
+        --yellow-color: #a3a65d;
+        --dark-yellow-color: #898d46;
+        --purple-color: #c068f3;
+        --alt-purple-color: #ff8fdb;
+        --gray-color: #798497;
+        --code-block-bg: #b6b7be;
+        --dark-gray-color: #4a5775;
+    }
+    
+    /* main section background */
+    .main_section_wrapper {
+        background: none !important;
+    }
+    
+    /* header */
+    .student_profile_header_nav_wrapper {
+        background: var(--bg-2-color) !important;
+        border-radius: 5px !important;
+    }
+    
+    .student_profile_header_nav li a {
+        border: none !important;
+    }
+    
+    /* student item */
+    .profile_white_box {
+        background-color: var(--bg-2-color) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 5px !important;
+    }
+    
+    .student_item:hover, .student_item.edit_mode {
+        background-color: var(--hover-color) !important;
+    }
+    
+    /* name in header */
+    .ng-binding, .ng-binding:hover {
+        color: var(--text-color) !important;
+    }
+    
+    /* searchbar in header */  
+    .searchbar_wrapper .ng-pristine, .search_wrapper .ng-valid, .searchbar_wrapper .searchbar_icon, .searchbar_wrapper .searchbar_input {
+        background-color: #0000 !important;
+    }
+    
+    /* careers alert */
+    .careers_alert {
+        background-color: vaR(--red-color) !important;
+        border-radius: 5px !important;
+    }
+    
+    /* resume upload */
+    .resume_upload_section {
+        background: var(--dark-gray-color) !important;
+    }
+    
+    /* student card */
+    .student_card {
+        background-color: var(--bg-3-color) !important;
+        border-radius: 5px !important;
     }
 }
