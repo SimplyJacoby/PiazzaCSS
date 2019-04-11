@@ -660,6 +660,11 @@
         box-shadow: none !important;
     }
     
+    .feed_item:hover:not(.selected) {
+        background: var(--hover-color) !important;
+        cursor: pointer !important;
+    }
+    
     .feed_item:last-child {
         border-bottom: none !important;
     }
