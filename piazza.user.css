@@ -258,6 +258,10 @@
         color: #333 !important;
     }
     
+    code {
+        color: #333 !important;
+    }
+    
     /* textareas */
     .compose_discussion, .compose_reply, .compose_answer, .search_bar, .new_post_textarea, #input_poll_choice, #input_poll_explanation, .post_region_input, .autocomplete, .show_for_edit, .searchbar_wrapper, .network_search_section_input {
         background: var(--textarea-color) !important;
